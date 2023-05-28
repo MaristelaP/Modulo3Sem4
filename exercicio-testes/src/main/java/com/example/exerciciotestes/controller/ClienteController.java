@@ -54,7 +54,7 @@ public class  ClienteController {
 
   @DeleteMapping(path = "{id}")
   public ResponseEntity<Object> deleteCliente(@PathVariable (value = "id")Long id){
-    this.clienteService.detelaClientePorId(id);
+    this.clienteService.deletaClientePorId(id);
     return ResponseEntity.status(HttpStatus.OK).body(null);
   }
 

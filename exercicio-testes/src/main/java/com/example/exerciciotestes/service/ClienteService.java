@@ -41,10 +41,11 @@ public class ClienteService {
         return this.ClienteRepository.findById(id).orElse(null);
     }
 
-    public void detelaClientePorId(Long id){
+    public Boolean deletaClientePorId(Long id){
         if (buscaClientePorId(id) == null){
             throw new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR,"Cliente não encontrado para o ID "+id);
         }
         this.ClienteRepository.deleteById(id);
+        return true;
     }
 }

@@ -38,7 +38,8 @@ public class ProdutoService {
         return this.ProdutoRepository.findById(id).orElse(null);
     }
 
-    public void detelaProdutoPorId(Long id){
+    public Boolean deletaProdutoPorId(Long id){
         this.ProdutoRepository.deleteById(id);
+        return true;
     }
 }
