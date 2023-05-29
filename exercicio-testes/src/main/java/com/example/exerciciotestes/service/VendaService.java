@@ -27,6 +27,13 @@ public class VendaService {
 
     public Venda realizarVenda(VendaRequest vendaRequest){
         // TODO: código a ser feito no método TDD
+        /*
+        clienteService.buscaClientePorId(1L);
+        produtoService.buscaTodosProdutos();
+        vendaRepository.save(vendaRequest);
+
+        List<Venda> vendaList = vendaRequest.findById(1L);
+        */
         return null;
     }
 
